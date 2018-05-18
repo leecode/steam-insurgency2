@@ -4,15 +4,6 @@ Dockerfile for deploying insurgency2 dedicated server
 ### QuickStart
 
 ```shell
-$ docker run -ti --rm \
-    -p 27015:27015/udp \
-    -v $PWD/insurgency/:/opt/insurgency/ \
-    jacobtomlinson/steam-insurgency:latest \
-    update
-```
-
-
-```shell
 $ docker run -d \
 	-p 27015:27015 -p 27015:27015/udp \
 	-v /home/steam/opt/server.cfg:/home/steam/insurgency/insurgency/cfg/server.cfg 
